@@ -1,0 +1,68 @@
+//*-------------------------*/
+//* Sass Map
+//*-------------------------*/
+
+$theme-box: () !default;
+$theme-box: map-merge(
+  (
+  // key , value
+  "primary": blue,
+  "danger": red,
+  "secondary": orange 
+  ),
+  $theme-box
+);
+
+@each $key , $value in $theme-box{
+  .box-#{$key}{
+    background-color: $value;
+  }
+}
+
+
+$utilities: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$utilities: map-merge(
+  
+    (
+    "align": (
+      responsive: true,
+      property: vertical-align,
+      class: align,
+      values: baseline top middle bottom text-bottom text-top
+    ),
+    "position": (
+      responsive: true,
+      property: position,
+      class: p,
+      values: static relative absolute fixed sticky
+    ),
+    "top": (
+      responsive: true,
+      property: top,
+      class: top,
+      values: $spacers
+    ),
+    "bottom": (
+      responsive: true,
+      property: bottom,
+      class: bottom,
+      values: $spacers
+    ),
+    "left": (
+      responsive: true,
+      property: left,
+      class: left,
+      values: $spacers
+    ),
+    "right": (
+      responsive: true,
+      property: right,
+      class: right,
+      values: $spacers
+    ),
+)
+,
+  $utilities
+);
+

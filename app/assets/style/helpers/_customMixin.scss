@@ -1,0 +1,209 @@
+//*-------------------------*/
+//* @mixin
+//*-------------------------*/
+
+// ! @include fontSize(1.6rem , 1.6rem);
+
+// 方向性
+//----------------
+
+@mixin flex($jc,$ai) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
+// 水平置中
+@mixin center($direction: row, $wrap: wrap, $main-center:center, $sub-center:center) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $main-center;
+  align-items: $sub-center;
+}
+@mixin posCenter() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+@mixin pos($t:initial,$l:initial) {
+  position: absolute;
+  top: $t;
+  left: $l;
+}
+
+// 文字性
+//----------------
+
+// 文字顏色
+@mixin textColor($color) {
+  color: $color;
+}
+// 文字大小／行距
+@mixin fontSize($size , $height) {
+  font-size: $size;
+  line-height: $height;
+}
+// 隱藏文字圖取代
+@mixin hiddenText() {
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// 背景性
+//----------------
+
+// 背景顏色
+@mixin bgColor($bgColor: #fff){
+  background-color: $bgColor;
+}
+// 背景圖片
+@mixin bgUrl($url: url('../../assets/images/xxxxx.jpg') ){
+  background-image: $url;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: none repeat;
+}
+
+// 物件性
+//----------------
+
+// 圓角
+@mixin radiusSize($w: 10rem,$h:10rem,$br: 50%) {
+  width: $w;
+  height: $h;
+  border-radius: $br;
+}
+// 偽元素
+@mixin fakePseudo($width: 100%, $height: auto, $backgroundColor:#000) {
+  content: " ";
+  display: block;
+  width: $width;
+  height: $height;
+  background-color: $backgroundColor;
+}
+// 物件寬高
+@mixin width($width , $height) {
+  width: $width;
+  height: $height;
+}
+// utility
+@mixin generate-utility($utility, $infix) {
+  $values: map-get($utility, values);
+  @if type-of($values) == "string" or type-of(nth($values, 1)) != "list" {
+    $values: zip($values, $values);
+  }
+  @each $value in $values {
+    $properties: map-get($utility, property);
+    @if type-of($properties) == "string" {
+      $properties: append((), $properties);
+    }
+    $property-class: map-get($utility, class);
+    $property-class: if($property-class, $property-class, nth($properties, 1));
+    $property-class-modifier: if(nth($value, 1), "-" + nth($value, 1), "");
+
+    .#{$property-class + $infix + $property-class-modifier} {
+      @each $property in $properties {
+        #{$property}: #{nth($value, 2)} !important;
+      }
+    }
+  }
+}
+@function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
+  @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
+}
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    @each $key, $utility in $utilities {
+      @if type-of($utility) == "map" and (map-get($utility, responsive) or $infix == "") {
+        @include generate-utility($utility, $infix);
+      }
+    }
+  }
+}
+// 斷點
+@mixin mob320 {
+  @media screen and (min-width:$mq320){
+    @content;
+  }
+}
+@mixin mob360 {
+  @media screen and (min-width:$mq360){
+    @content;
+  }
+}
+@mixin mob375 {
+  @media screen and (min-width:$mq375){
+    @content;
+  }
+}
+@mixin mob411 {
+  @media screen and (min-width:$mq411){
+    @content;
+  }
+}
+@mixin mob414 {
+  @media screen and (min-width:$mq414){
+    @content;
+  }
+}
+@mixin mob480 {
+  @media screen and (min-width:$mq480){
+    @content;
+  }
+}
+@mixin mob540 {
+  @media screen and (min-width:$mq540){
+    @content;
+  }
+}
+@mixin mob576 {
+  @media screen and (min-width:$mq576){
+    @content;
+  }
+}
+@mixin mob600 {
+  @media screen and (min-width:$mq600){
+    @content;
+  }
+}
+@mixin mob640 {
+  @media screen and (min-width:$mq640){
+    @content;
+  }
+}
+// 平板
+@mixin pad768 {
+  @media screen and (min-width:$mq768){
+    @content;
+  }
+}
+@mixin pad769 {
+  @media screen and (min-width:$mq769){
+    @content;
+  }
+}
+@mixin pad992 {
+  @media screen and (min-width:$mq992){
+    @content;
+  }
+}
+// 桌機
+@mixin desktop1024 {
+  @media screen and (min-width:$mq1024){
+    @content;
+  }
+}
+@mixin desktop1200 {
+  @media screen and (min-width:$mq1200){
+    @content;
+  }
+}
+@mixin desktop1366 {
+  @media screen and (min-width:$mq1366){
+    @content;
+  }
+}

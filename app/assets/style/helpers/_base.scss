@@ -1,0 +1,114 @@
+
+//$Font import 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap");
+// @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+//*-------------------------*/
+//* base
+//*-------------------------*/
+
+// *,
+// *:before,
+// *:after {
+// 	position: relative;
+//   box-sizing: border-box;
+// }
+html {
+  font-size: 62.5%;
+}
+body {
+  min-width: 0;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  // font-weight: 400;
+  // font-size: 2.6vw;
+  // line-height: 4vw;
+  // 20px / 30px 
+  @media screen and (min-width: $mq768) {
+    font-size: 1.8rem;
+    // margin: auto;
+    // background-image: url('../../assets/images/bg_texture.jpg');
+    // background-repeat: repeat;
+  }
+}
+::selection { 
+  color: white; 
+  background-color:$primary;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  border: 0;
+  height: auto;
+  @media screen and (min-width: $mq1200) {
+    width: auto;
+  }
+}
+h1, h2, h3, h4, h5, h6{
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+}
+h1 {
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+h4 {
+  font-size: 2.2rem;
+}
+h5 {
+  font-size: 2.0rem;
+}
+h6 {
+  font-size: 1.8rem;
+}
+p{
+  margin: 0;
+  text-align: justify;
+}
+ol, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  display: inline-block;
+}
+// 表單格式
+input {
+  appearance: none;
+  background-color: transparent;
+}
+input,
+select,
+textarea {
+  outline: none;
+  border: none;
+  resize: none;
+  font-size: initial;
+}
+button{
+  border: none;
+}
+button:focus,
+input:focus,
+select:focus,
+textarea:focus{
+  outline: none;
+}
+// Select 拿掉箭頭的CSS語法
+select {
+  -webkit-appearance: none; /*Chrome*/
+  -moz-appearance: none; /*FF*/
+  appearance: none;/*CSS3*/
+  }  
+select::-ms-expand {
+  display: none; /*IE*/
+}
+

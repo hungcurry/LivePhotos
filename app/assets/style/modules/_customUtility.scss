@@ -1,0 +1,481 @@
+//*-------------------------*/
+//* custom utility
+//*-------------------------*/
+
+// 內陰影文字
+.keyword {
+  box-shadow: inset 0 -0.9rem 0 $bg-fourthly ;
+}
+// 文案註解
+.supplement{
+  color: $secondary !important;
+  @media screen and (min-width: $mq1200) {
+
+  }
+}
+// 圖片自適應
+.object-img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+// remind 小提醒
+.remind{
+  @include width(4rem , 4rem);
+  margin-right: 1.5rem;
+  // margin-top: 0.5rem;
+  @media screen and (min-width: $mq768) {
+    @include width(5.3rem , 5.3rem);
+  }
+  &-Text{
+    width: 100%;
+    @include fontSize(1.4rem , 1.7);
+    @media screen and (min-width: $mq768) {
+      @include fontSize(1.6rem , 1.7);
+    }
+  }
+}
+.remind2{
+  @include width(4rem , 4rem);
+  margin-right: 1rem;
+  @media screen and (min-width: $mq768) {
+    // @include width(5.3rem , 5.3rem);
+  }
+  &-Text{
+    width: 100%;
+    @include fontSize(1.6rem , 1.7);
+    @media screen and (min-width: $mq768) {
+      @include fontSize(1.8rem , 1.7);
+    }
+  }
+}
+// 圖樣
+.pattern{
+  @include width(6.7rem , 5rem);
+  margin-right: 0.5rem;
+  // margin-right: 1.5rem;
+  display: block;
+  @media screen and (min-width: $mq768) {
+    @include width(8.7rem , 7rem);
+    margin-right: 1.5rem;
+    // display: block;
+  }
+  @media screen and (min-width: $mq992) {
+    display: none;
+  }
+  @media screen and (min-width: $mq1200) {
+    display: block;
+  }
+}
+// addPic
+.addPic{
+  @include pos(50% , 50%);
+  transform: translate(17% , -30%);
+}
+
+// --------------------
+// custom字體類
+// --------------------
+
+// 文字隱藏
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+// 文字產生 …
+// 必須要先有寬度 才能使用這語法
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+// 文字換行
+.word-break{
+  word-break: break-all !important;
+}
+.white-space{
+  white-space: nowrap !important;
+}
+// 文字漸層
+// 避免使用letter-spacing 
+.text-gradient{
+  color: #34849e;
+  background: -webkit-linear-gradient( 0deg,#34849e 0,#6db6ca 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent !important;
+}
+// 桌機文字換色
+.text-lg-white{
+  @media screen and (min-width: $mq1200) {
+    color: $white !important;
+  }
+}
+.text-lg-secondary{
+  @media screen and (min-width: $mq1200) {
+    color: $secondary!important;
+  }
+}
+// 字體大小
+.fz-18{
+  @include fontSize(1.6rem , 1.7);
+  @media screen and (min-width: $mq768) {
+    @include rfs(1.8rem !important);
+  }
+}
+.fz-19{
+  @include rfs(1.9rem !important);
+  font-weight: 500 !important;
+  @media screen and (min-width: $mq768) {
+
+  }
+}
+.fz-20{
+  font-size: 1.4rem;
+  line-height: 1.4;
+  letter-spacing: 0.1rem;
+  font-weight: 500 !important;
+  @media screen and (min-width: $mq375) {
+    @include rfs(2rem !important);
+  }
+}
+.fz-22{
+  @include rfs(2.2rem !important);
+  line-height: 1.5;
+  font-weight: 500 !important;
+  @media screen and (min-width: $mq768) {
+
+  }
+}
+.fz-26{
+  @include rfs(2.6rem !important);
+  line-height: 1.5;
+  font-weight: 500 !important;
+  @media screen and (min-width: $mq768) {
+    @include rfs(3rem !important);
+  }
+}
+.fz-30{
+  @include rfs(3rem !important);
+  line-height: 1.5;
+  font-weight: 700 !important;
+  @media screen and (min-width: $mq768) {
+
+  }
+}
+.fz-32{
+  @include rfs(3.2rem !important);
+  font-weight: bold !important;
+  @media screen and (min-width: $mq768) {
+
+  }
+}
+.fz-36{
+  @include rfs(3.6rem !important);
+  @include posCenter();
+  font-weight: 500 !important;
+  @media screen and (min-width: $mq768) {
+
+  }
+}
+.fz-40{
+  @include rfs(4rem !important);
+  font-weight: 500 !important;
+  @media screen and (min-width: $mq768) {
+
+  }
+}
+// 字重
+.font-Regular{
+  font-weight: 400 !important;
+}	
+.font-medium{
+  font-weight: 500 !important;
+}
+.font-bold{
+  font-weight: 700 !important;
+}
+
+// --------------------
+// custom rounded
+// --------------------
+
+//右半邊圓角
+.picBorder-right{
+  //border-radius: 3rem 3rem 3rem 3rem ;
+  @media screen and (min-width: $mq1200) {
+    //border-radius: 10rem 10rem 10rem 10rem ;
+  }
+}
+//左半邊圓角
+.picBorder-left{
+  //border-radius: 3rem 3rem 3rem 3rem ;
+  @media screen and (min-width: $mq1200) {
+    //border-radius: 10rem 10rem 10rem 10rem ;
+  }
+}
+//右半邊圓角-2
+.picBorder-right-2{
+  //border-radius: 3rem 3rem 3rem 3rem ;
+  @media screen and (min-width: $mq1200) {
+    //border-radius: 10rem 10rem 10rem 10rem ;
+  }
+}
+//左半邊圓角-2
+.picBorder-left-2{
+  //border-radius: 3rem 3rem 3rem 3rem ;
+  @media screen and (min-width: $mq1200) {
+    //border-radius: 10rem 10rem 10rem 10rem ;
+  }
+}
+// 圓角
+.rounded-5{
+  border-radius: 0.5rem !important;
+}
+.rounded-30{
+  border-radius: 3rem !important;
+}
+
+// --------------------
+// custom border
+// --------------------
+
+// 線框
+.border-3{
+  border-width: 0.3rem !important;
+}
+.border-5{
+  border-width: 0.5rem !important;
+}
+.border-top-3{
+  border-top: 0.3rem dotted #000 !important;
+}
+.border-top-5{
+  border-top: 0.5rem solid $border-primary !important;
+}
+.border-right-3{
+  border-right: 0.3rem dotted #000 !important;
+}
+.border-bottom-1{
+  border-bottom: 0.1rem solid $gray-400 !important;
+  @media screen and (min-width: $mq1024) {
+    border-bottom: 0rem solid $gray-400 !important;
+  }
+}
+.border-bottom-3{
+  border-bottom: 0.3rem dotted #000 !important;
+}
+.border-left-3{
+  border-left: 0.3rem dotted #000 !important;
+}
+.border-left-5{
+  border-left: 0.5rem solid $info !important;
+}
+.border-Left-15{
+  @media screen and (min-width: $mq1024) {
+    border-left: 1.5rem solid $primary !important ;
+  }
+}
+
+// --------------------
+// custom ul li
+// --------------------
+
+// ul li 清單樣式
+ul{
+  width: 100%;
+  color: $black;
+  &.specification{
+    color: $secondary;
+  }
+}
+li{
+  text-align: left;
+  @media screen and (min-width: $mq768) {
+
+  }
+  &.title{
+    margin-left: -1.5rem;
+  }
+  &.number{
+    list-style-type: decimal;
+  }
+  &.disc{
+    // color: $thirdly;
+    @media screen and (min-width: $mq1200) {
+      font-size: 1.8rem;
+      text-align: justify;
+    }
+  }
+  &.disc2{
+    // color: $black;
+    @media screen and (min-width: $mq1200) {
+      font-size: 1.8rem;
+    }
+  }
+}
+li.disc:before{
+  @include width(0.6rem , 0.6rem); // 0.4rem 0.4rem
+  position: absolute;
+  top: 1.2rem; // 1.5rem
+  left: -1rem; // -1.5rem
+  border-radius: 50%;
+  display: inline-block;
+  content:"";
+  background-color: $black;
+  @media screen and (min-width: $mq1200) {
+    // @include width(2rem , 2rem); // 無
+    // top: 1.2rem;  // 無
+    // left: -2.5rem; // 無
+  }
+}
+li.disc2:before{
+  @include width(0.6rem , 0.6rem); // 0.4rem 0.4rem
+  position: absolute;
+  top: 1.5rem; // 1.5rem
+  left: -1.5rem; // -1.5rem
+  border-radius: 50%;
+  display: inline-block;
+  content:"";
+  background-color: $black ;
+  @media screen and (min-width: $mq1200) {
+
+  }
+}
+li.disc.text-lg-secondary:before{
+  @media screen and (min-width: $mq1200) {
+    background-color: $thirdly;
+  }
+}
+// --------------------
+// custom Max-Width
+// --------------------
+
+.max-w-xl{
+  @media screen and (min-width: $mq1200) {
+    max-width: 52rem !important;
+  }
+}
+.max-w-2xl{
+  max-width: 104rem !important;
+}
+.max-w-3xl{
+  max-width: 156rem !important;
+}
+
+// --------------------
+// custom Min-Width
+// --------------------
+
+.min-w-sm{
+  min-width: 70rem !important;
+  @media screen and (min-width: $mq768) {
+    min-width: 110rem !important;
+  }
+}
+.min-w-xl{
+  min-width: 76.8rem !important;
+  @media screen and (min-width: $mq768) {
+    min-width: 110rem !important;
+  }
+}
+
+// --------------------
+// custom Spacing
+// --------------------
+
+// 正向工具 --padding
+
+.pt-xl-28{
+  @media screen and (min-width: $mq1200) {
+    padding-top: 14rem !important;
+  }
+}
+.pb-xl-21{
+  @media screen and (min-width: $mq1200) {
+    padding-bottom: 10.5rem !important;
+  }
+}
+.pb-xl-30{
+  @media screen and (min-width: $mq1200) {
+    padding-bottom: 15rem !important;
+  }
+}
+.pl-xl-12{
+  @media screen and (min-width: $mq1200) {
+    padding-left: 6rem !important;
+  }
+}
+.px-xl-35{
+  @media screen and (min-width: $mq1200) {
+    padding-left: 17rem !important;
+    padding-right: 17rem !important;
+  }
+}
+// 正向工具 --margin
+.mt-xl-27{
+  @media screen and (min-width: $mq1200) {
+    margin-top: 13.5rem !important;
+  }
+}
+.mt-xl-31{
+  @media screen and (min-width: $mq1200) {
+    margin-top: 15.5rem !important;
+  }
+}
+.mb-xl-30{
+  @media screen and (min-width: $mq1200) {
+    margin-bottom: 15rem !important;
+  }
+}
+.mb-xl-40{
+  @media screen and (min-width: $mq1200) {
+    margin-bottom: 20rem !important;
+  }
+}
+// 正向工具 --offset-top
+.top-offset-2{
+  top: 1rem !important;
+}
+.top-offset-6{
+  top: 3rem !important;
+}
+// 正向工具 --offset-padding 百分比
+.pl-offset-1{
+  @media screen and (min-width: $mq1200) {
+    padding-left: 8.3333% !important;
+  }
+}
+.pl-offset-2{
+  @media screen and (min-width: $mq1200) {
+    padding-left: 16.6666% !important;
+  }
+}
+// --------------------------------------------------
+
+// 負向工具 --margin
+.mt-xl-n16{
+  @media screen and (min-width: $mq1200) {
+    margin-top: -8rem !important;
+  }
+}
+.mt-xl-n27{
+  @media screen and (min-width: $mq1200) {
+    margin-top: -13.5rem !important;
+  }
+}
+// 負向工具 --offset-top
+.top-offset-n2{
+  top: -1rem !important;
+}
+.top-offset-n6{
+  top: -3rem !important;
+}
+.top-offset-n15{
+  @media screen and (min-width: $mq1200) {
+    top: -7.5rem !important;
+  }
+}
