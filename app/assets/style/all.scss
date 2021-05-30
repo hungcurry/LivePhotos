@@ -1,7 +1,7 @@
 @import "functions";
 @import "./helpers/variables";
 @import "mixins";
-// @import "bootstrap";
+@import "bootstrap";
 
 //-----------------
 // Option
@@ -53,6 +53,6 @@
 //-----------------
 // 工具類 放最後
 //-----------------
-@import "./modules/customUtility";
+// @import "./modules/customUtility";
 
 
