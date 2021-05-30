@@ -21,7 +21,6 @@ $text-secondary: #86868b;
 $text-thirdly: #2d415e;
 $text-fourthly: #c4a991;
 
-
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
@@ -84,18 +83,17 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default; // 主色  // $blue !default;
-$secondary:     #992323 !default; // 次色  // $gray-600 !default;
-$thirdly :      #48928e !default; 
-$fourthly :     #86868b !default; // 英文小標
-$fifthly :      #fafafa !default; // 圖框
+$primary:       #FFDF65 !default; // 主色  // $blue !default;
+$secondary:     #858377 !default; // 次色  // $gray-600 !default;
+$thirdly:      #FF785E !default;
+$fourthly:      #373A3C !default;
 
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$dark:          #636057 !default; // $gray-900
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -104,7 +102,7 @@ $theme-colors: (
   "secondary":  $secondary,
   "thirdly":    $thirdly,
   "fourthly":   $fourthly,
-  "fifthly":    $fifthly,
+
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
@@ -273,12 +271,32 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
 $spacers: (
-  0: 0,
-  1: $spacer / 4,
-  2: $spacer / 2,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  0: 0,   // 0: 0, 
+  1: 4px, // 1: ($spacer * .25),  ===> 4
+  2: 8px,// 2: ($spacer * .5),  ===> 8
+  3: 12px,// 3: $spacer,         ===> 16
+  4: 16px,// 4: ($spacer * 1.5), ===> 24
+  5: 20px,// 5: ($spacer * 3)    ===> 48
+  6: 24px,
+  7: 28px,
+  8: 32px,
+  9: 36px,
+  10: 40px,
+  11: 44px,
+  12: 48px,
+  13: 52px,
+  14: 56px,
+  15: 60px,
+  16: 64px,
+  17: 68px,
+  18: 72px,
+  19: 76px,
+  20: 80px,
+  21: 84px,
+  22: 88px,
+  23: 92px,
+  24: 96px,
+  25: 100px,
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -301,7 +319,7 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-color:                #494846 !default; // $gray-900
 $body-text-align:           null !default;
 
 
@@ -367,7 +385,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           1.5rem !default;
+$grid-gutter-width:           2.4rem !default;
 $grid-row-columns:            6 !default;
 
 $gutters: $spacers !default;

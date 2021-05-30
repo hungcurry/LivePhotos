@@ -1,7 +1,6 @@
 //*-------------------------*/
 //* custom utility
 //*-------------------------*/
-
 // 內陰影文字
 .keyword {
   box-shadow: inset 0 -0.9rem 0 $bg-fourthly ;
@@ -149,6 +148,9 @@
   @media screen and (min-width: $mq768) {
 
   }
+}
+.fz-24{
+  @include rfs(2.4rem !important);
 }
 .fz-26{
   @include rfs(2.6rem !important);

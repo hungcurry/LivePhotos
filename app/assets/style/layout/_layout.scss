@@ -3,5 +3,43 @@
   outline: 0;
 }
 * {
-  outline: 0.1rem solid red;
+  // outline: 0.1rem solid red;
+  font-family: "Noto Sans TC" , -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+.logo{
+  @include width(111px , 40px);
+
+}
+.navbar{
+  .btn{
+    min-width: 9.6rem;
+    font-size: 1.6rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
+.navbar-nav{
+  @media screen and (min-width: $mq992) {
+    li + li {
+      margin-left: 48px;
+    }
+  }
+}
+.modal{
+  .modal-header{
+    border-top: 3px solid $primary;
+  }
+  .modal-content{
+    border-radius: 0.8rem;
+    overflow: hidden;
+  }
+  .form-control{
+    line-height: 2;
+    background-color: #F7F7F7;
+  }
+  .progress{
+    height: 1px;
+  }
+  .progress-bar{
+    background-color: #E8E8DB ;
+  }
 }

@@ -19,13 +19,13 @@ html {
 body {
   min-width: 0;
   font-size: 1.6rem;
-  line-height: 1.7;
+  // line-height: 1.7;
   // font-weight: 400;
   // font-size: 2.6vw;
   // line-height: 4vw;
   // 20px / 30px 
   @media screen and (min-width: $mq768) {
-    font-size: 1.8rem;
+    // font-size: 1.8rem;
     // margin: auto;
     // background-image: url('../../assets/images/bg_texture.jpg');
     // background-repeat: repeat;
@@ -67,6 +67,24 @@ h5 {
 }
 h6 {
   font-size: 1.8rem;
+}
+.h1 {
+  @include rfs(3.2rem !important);
+}
+.h2 {
+  @include rfs(2.8rem !important);
+}
+.h3 {
+  @include rfs(2.4rem !important);
+}
+.h4 {
+  @include rfs(2.2rem !important);
+}
+.h5 {
+  @include rfs(2rem !important);
+}
+.h6 {
+  @include rfs(1.8rem !important);
 }
 p{
   margin: 0;
@@ -112,3 +130,25 @@ select::-ms-expand {
   display: none; /*IE*/
 }
 
+
+// <h1 class="display-1">Display 1</h1> // 50px
+// <h1 class="display-2">Display 2</h1> // 45px
+// <h1 class="display-3">Display 3</h1> // 40px
+// <h1 class="display-4">Display 4</h1> // 35px
+// <h1 class="display-5">Display 5</h1> // 30px
+// <h1 class="display-6">Display 6</h1> // 25px
+
+
+// <p class="h1"></p> // 32px
+// <p class="h2"></p> // 28px
+// <p class="h3"></p> // 24px
+// <p class="h4"></p> // 22px
+// <p class="h5"></p> // 20px
+// <p class="h6"></p> // 18px
+
+
+// <div class="fs-1"></div> // 25px
+// <div class="fs-2"></div> // 20px
+// <div class="fs-3"></div> // 17.5px
+// <div class="fs-4"></div> // 15px
+// <div class="fs-5"></div> // 12.5px
