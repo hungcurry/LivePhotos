@@ -467,7 +467,8 @@ $font-family-code:            var(--#{$variable-prefix}font-monospace) !default;
 // $font-size-root effects the value of `rem`, which is used for as well font sizes, paddings and margins
 // $font-size-base effects the font size of the body text
 $font-size-root:              null !default;
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:              1.6rem !default;  // 1rem
+// Assumes the browser default, typically `16px`
 $font-size-sm:                $font-size-base * .875 !default;
 $font-size-lg:                $font-size-base * 1.25 !default;
 
@@ -493,12 +494,33 @@ $h6-font-size:                $font-size-base !default;
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size
+  // 1: $h1-font-size,
+  // 2: $h2-font-size,
+  // 3: $h3-font-size,
+  // 4: $h4-font-size,
+  // 5: $h5-font-size,
+  // 6: $h6-font-size
+  12: 1.2rem,
+  13: 1.3rem,
+  14: 1.4rem,
+  15: 1.5rem,
+  16: 1.6rem,
+  18: 1.8rem,
+  20: 2rem,
+  22: 2.2rem,
+  24: 2.4rem,
+  26: 2.6rem,
+  28: 2.8rem,
+  30: 3rem,
+  32: 3.2rem,
+  34: 3.4rem,
+  36: 3.6rem,
+  38: 3.8rem,
+  40: 4rem,
+  42: 4.2rem,
+  44: 4.4rem,
+  46: 4.6rem,
+  50: 5rem
 ) !default;
 // scss-docs-end font-sizes
 

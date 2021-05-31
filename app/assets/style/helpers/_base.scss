@@ -1,7 +1,11 @@
 
 //$Font import 
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap");
-// @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&family=Noto+Sans+TC:wght@400;500&display=swap');
+
+// @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap");
+// @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap');
+
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 //*-------------------------*/
 //* base
@@ -17,8 +21,8 @@ html {
   font-size: 62.5%;
 }
 body {
-  min-width: 0;
-  font-size: 1.6rem;
+  // min-width: 0;
+  // font-size: 1.6rem;
   // line-height: 1.7;
   // font-weight: 400;
   // font-size: 2.6vw;
@@ -36,14 +40,14 @@ body {
   background-color:$primary;
 }
 img {
-  width: 100%;
+  // width: 100%;
   max-width: 100%;
   display: block;
-  border: 0;
+  // border: 0;
   height: auto;
-  @media screen and (min-width: $mq1200) {
-    width: auto;
-  }
+  // @media screen and (min-width: $mq1200) {
+  //   width: auto;
+  // }
 }
 h1, h2, h3, h4, h5, h6{
   font-weight: 500;
@@ -67,24 +71,6 @@ h5 {
 }
 h6 {
   font-size: 1.8rem;
-}
-.h1 {
-  @include rfs(3.2rem !important);
-}
-.h2 {
-  @include rfs(2.8rem !important);
-}
-.h3 {
-  @include rfs(2.4rem !important);
-}
-.h4 {
-  @include rfs(2.2rem !important);
-}
-.h5 {
-  @include rfs(2rem !important);
-}
-.h6 {
-  @include rfs(1.8rem !important);
 }
 p{
   margin: 0;

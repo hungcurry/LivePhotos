@@ -66,15 +66,17 @@
     display: block;
   }
 }
-// addPic
-.addPic{
-  @include pos(50% , 50%);
-  transform: translate(17% , -30%);
-}
 
 // --------------------
 // custom字體類
 // --------------------
+
+.Noto {
+  font-family: 'Noto Sans TC', sans-serif!important;
+}
+.Baloo {
+  font-family: 'Baloo Tamma 2', cursive !important;
+}
 
 // 文字隱藏
 .text-hide {
@@ -119,76 +121,26 @@
   }
 }
 // 字體大小
-.fz-18{
-  @include fontSize(1.6rem , 1.7);
-  @media screen and (min-width: $mq768) {
-    @include rfs(1.8rem !important);
-  }
+.h1 {
+  @include rfs(3.2rem !important);
 }
-.fz-19{
-  @include rfs(1.9rem !important);
-  font-weight: 500 !important;
-  @media screen and (min-width: $mq768) {
-
-  }
+.h2 {
+  @include rfs(2.8rem !important);
 }
-.fz-20{
-  font-size: 1.4rem;
-  line-height: 1.4;
-  letter-spacing: 0.1rem;
-  font-weight: 500 !important;
-  @media screen and (min-width: $mq375) {
-    @include rfs(2rem !important);
-  }
-}
-.fz-22{
-  @include rfs(2.2rem !important);
-  line-height: 1.5;
-  font-weight: 500 !important;
-  @media screen and (min-width: $mq768) {
-
-  }
-}
-.fz-24{
+.h3 {
   @include rfs(2.4rem !important);
 }
-.fz-26{
-  @include rfs(2.6rem !important);
-  line-height: 1.5;
-  font-weight: 500 !important;
-  @media screen and (min-width: $mq768) {
-    @include rfs(3rem !important);
-  }
+.h4 {
+  @include rfs(2.2rem !important);
 }
-.fz-30{
-  @include rfs(3rem !important);
-  line-height: 1.5;
-  font-weight: 700 !important;
-  @media screen and (min-width: $mq768) {
-
-  }
+.h5 {
+  @include rfs(2rem !important);
 }
-.fz-32{
-  @include rfs(3.2rem !important);
-  font-weight: bold !important;
-  @media screen and (min-width: $mq768) {
-
-  }
+.h6 {
+  @include rfs(1.8rem !important);
 }
-.fz-36{
-  @include rfs(3.6rem !important);
-  @include posCenter();
-  font-weight: 500 !important;
-  @media screen and (min-width: $mq768) {
-
-  }
-}
-.fz-40{
-  @include rfs(4rem !important);
-  font-weight: 500 !important;
-  @media screen and (min-width: $mq768) {
-
-  }
+.fs-52{
+  @include rfs(5.2rem !important);
 }
 // 字重
 .font-Regular{
@@ -246,12 +198,6 @@
 // --------------------
 
 // 線框
-.border-3{
-  border-width: 0.3rem !important;
-}
-.border-5{
-  border-width: 0.5rem !important;
-}
 .border-top-3{
   border-top: 0.3rem dotted #000 !important;
 }
@@ -289,7 +235,6 @@
 // ul li 清單樣式
 ul{
   width: 100%;
-  color: $black;
   &.specification{
     color: $secondary;
   }
