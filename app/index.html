@@ -74,7 +74,7 @@ current: index
             <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0"
               aria-valuemax="100"></div>
           </div>
-          <div class="btn bg-white text-secondary ounded-pill 
+          <div class="btn bg-white text-secondary
           position-absolute top-50 start-50 translate-middle px-2 fs-14">還沒有帳號？
             <a class="text-thirdly text-decoration-none">註冊一個帳號</a>
           </div>
@@ -83,8 +83,6 @@ current: index
     </div>
   </div>
 </div>
-
-
 <!-- 最上方主要專案 -->
 <section class="banner pt-4 pb-8 py-md-12">
   <div class="container">
@@ -161,3 +159,98 @@ current: index
     </div>
   </div>
 </section>
+<!-- 中間選單 -->
+<section class="border-top border-bottom border-1 bg-white position-sticky top-0 start-0 z-max">
+  <div class="container p-0 p-lg-3">
+    <ul class="nav navTabs flex-nowrap justify-content-between justify-content-lg-start px-md-2">
+      <li class="nav-item">
+        <a class="nav-link text-dark px-2 px-md-4 active" aria-current="page" href="#">專案介紹</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark px-2 px-md-4" href="#">常見問答</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark px-2 px-md-4" href="#">目前進度</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark px-2 px-md-4" href="#">留言</a>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- 下方主要區塊 -->
+<section class="bg-white pt-8 pb-12 pt-lg-12">
+  <div class="container">
+    <div class="row gx-lg-12">
+      <!-- 左邊 頁籤區域 -->
+      <div class="col-12 col-lg-8">
+        <!-- tabs -->
+        <div class="tab-content mb-8 mb-lg-12">
+          <!-- tab - 專案介紹 -->
+          <div class="tab-pane fade active show" id="tab-detail" role="tabpanel">
+            <!-- 文章內容 -->
+            <article class="mb-4 mb-lg-6">
+              <img src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/p1.jpg" alt="" class="img-fluid mb-4 mb-lg-6">
+              <h4 class="border-start border-4 border-primary mb-2 ps-4 fs-24">施了魔法的照片</h4>
+              <p class="lh-lg">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。</p>
+            </article>
+            <article class="mb-4 mb-lg-6">
+              <img src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/p2.jpg" alt="" class="img-fluid mb-4 mb-lg-6">
+              <h4 class="border-start border-4 border-primary mb-2 ps-4 fs-24">留下當下的美好</h4>
+              <p class="lh-lg">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。</p>
+            </article>
+          </div>
+          <!-- tab - 常見問答 -->
+          <div class="tab-pane fade" id="tab-news" role="tabpanel"></div>
+          <!-- tab - 目前進度 -->
+          <div class="tab-pane fade" id="tab-qa" role="tabpanel"></div>
+          <!-- tab - 留言 -->
+          <div class="tab-pane fade" id="tab-comment" role="tabpanel"></div>
+        </div>
+        <!-- form-->
+        <div class="d-block">
+          <!-- title -->
+          <div class="title mb-4 mb-lg-6">
+            <img class="mx-auto mb-2 mb-lg-1" src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/hezuo.svg" alt="贊助專案">
+            <h3 class="position-relative d-flex justify-content-center align-items-center">
+              <span class="d-inline-block fs-24 px-4 bg-white">贊助專案</span>
+            </h3>
+          </div>
+          <form class="form" action="">
+            <div class="mb-4">
+              <label for="select" class="form-label text-fourthly mb-2">贊助方案</label>
+              <select id="select" class="form-select border-0 bg-light px-4" name="方案" required>
+                <option value="" selected disable hidden>請選擇一個方案</option>
+                <option value="方案1">方案1</option>
+                <option value="方案2">方案2</option>
+                <option value="方案3">方案3</option>
+                <option value="方案4">方案4</option>
+              </select>
+            </div>
+            <div class="mb-4">
+              <label for="name" class="form-label text-fourthly mb-2">收件人姓名</label>
+              <input type="text" id="name" name="姓名" placeholder="請輸入姓名" minlength="2" required
+              class="form-control border-0 bg-light px-4">
+            </div>
+            <div class="mb-4">
+              <label for="phone" class="form-label text-fourthly mb-2">聯絡電話</label>
+              <input type="tel" id="phone" name="電話" placeholder="請輸入電話" min="10" required
+              class="form-control border-0 bg-light px-4">
+            </div>
+            <div class="mb-4">
+              <label for="Email" class="form-label text-fourthly mb-2">連絡信箱</label>
+              <input type="email" id="Email" name="信箱" placeholder="請輸入 Email" required
+              class="form-control border-0 bg-light px-4">
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- 右邊 卡片區域 -->
+      <div class="col-12 col-lg-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse debitis quidem consectetur harum inventore itaque necessitatibus possimus adipisci obcaecati sint sunt corrupti voluptatibus veritatis at, maiores aliquid quibusdam omnis. Eius expedita et natus, hic reiciendis quia velit adipisci soluta esse molestiae magni, sequi nihil, quibusdam dolore. Corrupti fugit repellendus sequi necessitatibus est consequuntur consectetur deserunt error nisi consequatur dicta voluptates odit facilis veritatis id, dolorum sunt atque aspernatur non beatae vel. Animi doloribus saepe assumenda totam molestiae autem ex aspernatur quasi. Eligendi, assumenda, velit quod aut magnam sapiente delectus molestiae aliquid, ducimus distinctio adipisci beatae saepe esse ea minus unde odio fuga! Expedita delectus odit dicta maxime alias quam ullam? Nisi recusandae dolor dignissimos esse error fuga dolore nam eaque tenetur pariatur ratione illum sunt, earum corrupti qui aut? Neque expedita esse vitae doloribus dolorem voluptatum adipisci sequi! Aut ab cum perspiciatis modi. Iusto dolores dolore iure at eum laudantium veniam impedit culpa, ipsum ratione maiores architecto inventore quasi facere quis rerum optio! Non eaque tenetur eveniet reiciendis, natus officiis ad nulla corporis repellendus ipsam, enim nisi accusamus fugiat, nesciunt quis sed qui necessitatibus temporibus optio harum consectetur odio eum. Facere officiis laboriosam quibusdam similique laborum voluptates delectus aliquid nemo. Modi quas earum placeat ullam. Ex numquam harum praesentium ducimus eos sed temporibus laborum! Dignissimos odio officia corrupti? Cumque sequi labore a iusto rerum, fugiat pariatur debitis illo repellendus eum, deserunt quibusdam? Libero placeat saepe vel praesentium mollitia consectetur est repellendus temporibus nesciunt quidem reiciendis aut incidunt tenetur illum ex nisi, ipsam, facere vitae officia veniam ipsa excepturi odio. Labore repellendus laudantium, possimus alias non laborum similique ut reiciendis inventore officia tenetur dolorum minima deserunt nulla fugiat exercitationem voluptate ullam ab impedit dolores dignissimos. Molestiae totam error est voluptates veritatis animi reprehenderit, aliquam minus earum aliquid placeat quo voluptatum commodi porro sapiente soluta incidunt inventore quis molestias laborum obcaecati. Explicabo odit in natus pariatur aperiam officiis dicta quasi facere necessitatibus alias doloribus enim quidem rerum nesciunt placeat molestiae possimus blanditiis consectetur, nisi ducimus laudantium fuga ad accusantium! Voluptatum officiis animi sapiente sequi quasi. Temporibus, quod in tempore vel earum rerum labore nihil fugiat sit ab libero nostrum sunt fuga eum repellat odio voluptatum ratione eveniet quae? Ea magni repellat aperiam quo repudiandae rem similique impedit voluptatem optio sed iure mollitia voluptatibus commodi, quis consequuntur ex officia sint culpa nesciunt dicta! Distinctio officia beatae ad hic doloremque amet ex magni minus doloribus eveniet rem recusandae aliquid aspernatur illum, porro sequi. Doloribus consectetur quis ducimus numquam reiciendis saepe distinctio veritatis blanditiis natus unde nostrum tempore quasi consequuntur, labore ab excepturi? Ratione sunt esse, temporibus nihil eos ipsam incidunt laudantium magnam sequi tempora minus perspiciatis ad unde deleniti, officia natus tempore ullam, culpa neque maxime quaerat voluptates dolores. Eligendi expedita, id tempore, voluptatibus accusantium pariatur labore nobis fugit porro harum repudiandae quisquam adipisci. Dolorum corrupti praesentium repellendus culpa, at pariatur rem aliquam, quidem architecto quo eius, totam eos commodi officia voluptates obcaecati! Officia, impedit? Placeat ipsam enim rem maxime voluptatibus laboriosam minima, possimus, velit magnam deleniti sint. Neque placeat quisquam, iusto eaque, molestiae voluptatum corrupti nobis dolore, dolorum ducimus harum voluptatibus non natus magnam! Iure minima excepturi perspiciatis vel dignissimos maiores impedit natus, consectetur iste repellat corrupti unde, aspernatur error aperiam, atque veniam est inventore. Rem aspernatur expedita a aut atque itaque corporis reiciendis ducimus, vel sed, ipsam consequuntur omnis laudantium id eius ratione nostrum provident? Quos ullam corrupti repellat dolorum commodi? Vel qui numquam incidunt laboriosam libero nam rerum fugit nobis ullam labore? Alias soluta distinctio itaque possimus sequi! Magni error quasi ipsa necessitatibus eum vitae tempore ab voluptates, itaque dolores quo est ea neque perferendis sed dolore. Quam aliquam architecto doloremque tempore aut doloribus quisquam magni vitae in rerum reprehenderit id consectetur illum, veritatis deserunt illo deleniti exercitationem repellendus odit quis neque? Ullam reiciendis numquam atque sapiente tenetur iure laboriosam repudiandae molestias, ipsam magni et, quisquam modi. Saepe in repudiandae consectetur veniam vel? Molestiae nobis nemo dolore, distinctio sed itaque enim. Ducimus maxime cupiditate quasi laboriosam neque facere iste beatae voluptas temporibus a est fugit eligendi necessitatibus natus aliquam ex aliquid, ipsam modi. Dicta eius dolores quia quaerat laudantium consequuntur suscipit blanditiis aliquam voluptatem. Nisi ab assumenda atque dignissimos iste! Nulla ad nemo, totam, ab amet cumque, modi saepe esse enim distinctio mollitia dicta a possimus sit! Ab, ipsam possimus nostrum modi aliquam id hic vero sint architecto culpa temporibus blanditiis omnis, error aliquid tenetur optio ullam? Magni dignissimos, dolorum neque officiis nulla facere consequuntur libero quasi. At incidunt cum quibusdam, accusantium, aut modi, ratione eius beatae corrupti reprehenderit voluptatem consequatur voluptas nobis! Sequi qui deleniti consectetur ea eligendi voluptatibus harum eum dicta! Blanditiis architecto molestiae alias laudantium harum quibusdam sint ipsam atque. Quam eveniet illum ab beatae dolorem doloribus exercitationem placeat adipisci labore facere? Qui, similique. Labore perspiciatis dignissimos animi nostrum aliquam debitis architecto, magnam reiciendis maiores ipsam fugiat, iste nobis. Fugiat, expedita totam! Eum perspiciatis recusandae autem voluptas, explicabo culpa nesciunt maiores deleniti esse neque odio, placeat facilis, ipsa quaerat laboriosam rem? Quas veniam nostrum tenetur atque officia porro nesciunt beatae qui fuga ad, incidunt at exercitationem iste! Cum voluptate dolores, atque quaerat beatae ex reprehenderit id vel iste dignissimos tempora officiis ratione ea, maxime natus laudantium modi vero repellat? Cum, temporibus eaque doloremque harum quisquam ut, ex quas reprehenderit laboriosam similique quidem repellendus corporis assumenda obcaecati minus adipisci, nulla exercitationem voluptatibus cupiditate ratione! Maxime voluptatem libero, incidunt est voluptatibus ex itaque aut nostrum iure rem porro voluptas voluptates placeat totam numquam dolor mollitia odio voluptatum temporibus culpa, deleniti natus velit atque nobis? Fugiat ea, aliquam porro animi magnam praesentium ut vitae eveniet sapiente sunt cumque repellendus labore autem similique eaque dicta, quia facilis vero! Aut fugiat et vitae, natus quod similique corporis nulla porro veritatis voluptatum, repudiandae adipisci eum quaerat in atque obcaecati at saepe ducimus neque quos? Eaque placeat tempora odio fugit tenetur dolores debitis natus deleniti nostrum aliquam facilis ut quo dolor modi deserunt, ea blanditiis, iste accusantium provident illo sit cumque molestiae? Deleniti, perferendis exercitationem?
+      </div>
+    </div>
+  </div>
+</section>
+
+
