@@ -7,14 +7,7 @@
   font-family: "Noto Sans TC" , -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif ;
 }
 
-.btn-primary:hover{
-  background-color: $thirdly;
-  color: white !important;
-}
-.btn-outline-secondary:hover{
-  color: white !important;
-}
-
+// layout
 .navbar{
   .logo{
     @include width(11.1rem , 4rem);
@@ -32,7 +25,7 @@
 // navbar modal
 .modal{
   .modal-header{
-    border-top: 4px solid $primary;
+    border-top: 0.4rem solid $primary;
   }
   .modal-content{
     border-radius: 0.8rem;
@@ -43,7 +36,7 @@
     background-color: #F7F7F7;
   }
   .progress{
-    height: 1px;
+    height: 0.1rem;
   }
   .progress-bar{
     background-color: #E8E8DB ;
@@ -53,7 +46,7 @@
   background-color: #F8F9FA ;
   .badge{
     width: 8rem;
-    line-height: 22px;
+    line-height: 2.2rem;
   }
   .bannerImg{
     border-radius: 3.2rem;
@@ -74,7 +67,7 @@
   .track:hover{
     background-color: $primary;
     color: #636057!important;
-    border: 2px solid transparent !important;
+    border: 0.2rem solid transparent !important;
   }
   .track:hover .fa-heart{
     color: $thirdly;
@@ -84,14 +77,14 @@
   .nav-link{
     padding-top: 1.5rem;
     padding-bottom: 1.4rem; 
-    border-bottom: 2px solid transparent;
+    border-bottom: 0.2rem solid transparent;
     @media screen and (min-width: $mq992) {
       padding-top: 2.2rem;
       padding-bottom: 2.2rem; 
     }
   }
   .nav-link.active{
-    border-bottom: 2px solid $primary;
+    border-bottom: 0.2rem solid $primary;
     font-weight: 700;
   }
   li + li{
@@ -111,7 +104,7 @@
     content: "";
     @include posCenter;
     width: 100%;
-    height: 3px;
+    height: 0.3rem;
     background-color: $primary;
     z-index: 1;
   }
@@ -121,5 +114,40 @@
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
     color: #999999;
+  }
+}
+.company{
+  .icon-social{
+    @include width(3rem , 3rem);
+  }
+  .plan{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    min-height: 4rem;
+  }
+}
+.card{
+  border-radius: 1.4rem;
+  .bg-beige{
+    background-color: #E8E8DB ;
+  }
+}
+.footer{
+  background-color: #494846;
+}
+//其餘小元件
+.btn-primary:hover{
+  background-color: $thirdly;
+  color: white !important;
+}
+.btn-outline-secondary:hover{
+  color: white !important;
+}
+.scroll-lg-bar {
+  @media screen and (min-width: $mq992) {
+    overflow: auto ;
+    height: calc(80vh - 48px);
+    position: sticky;
+    top: 7.2rem;
   }
 }

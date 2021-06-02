@@ -22,7 +22,7 @@ html {
 }
 body {
   // min-width: 0;
-  // font-size: 1.6rem;
+  font-size: 1.6rem;
   // line-height: 1.7;
   // font-weight: 400;
   // font-size: 2.6vw;
@@ -41,12 +41,9 @@ body {
 }
 img {
   // width: 100%;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   display: block;
-  // border: 0;
-  // @media screen and (min-width: $mq1200) {
-  //   width: auto;
-  // }
 }
 h1, h2, h3, h4, h5, h6{
   font-weight: 500;
