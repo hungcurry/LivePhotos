@@ -1199,9 +1199,9 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
 
 // scss-docs-start tooltip-variables
 $tooltip-font-size:                 $font-size-sm !default;
-$tooltip-max-width:                 200px !default;
-$tooltip-color:                     $white !default;
-$tooltip-bg:                        $black !default;
+$tooltip-max-width:                 88px !default; // 200px
+$tooltip-color:                     $primary !default; // white
+$tooltip-bg:                        #494846 !default; // $black
 $tooltip-border-radius:             $border-radius !default;
 $tooltip-opacity:                   .9 !default;
 $tooltip-padding-y:                 $spacer / 4 !default;

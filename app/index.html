@@ -76,19 +76,23 @@ current: index
           <!-- iconGroup -->
           <ul class="d-flex justify-content-between justify-content-lg-start mb-4">
             <li class="d-flex">
-              <img class="icon-good" src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/icon_good01.svg" alt="認證標章">
+              <img class="icon-good" data-bs-toggle="tooltip" data-bs-placement="top" title="認證標章"
+              src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/icon_good01.svg" alt="認證標章">
               <span class="d-block d-lg-none text-dark fs-12 ms-2">認證標章</span>
             </li>
-            <li class="d-flex">
-              <img class="icon-good ms-lg-6" src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/icon_good02.svg" alt="品質保證">
+            <li class="d-flex ms-lg-6">
+              <img class="icon-good" data-bs-toggle="tooltip" data-bs-placement="top" title="品質保證"
+              src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/icon_good02.svg" alt="品質保證">
               <span class="d-block d-lg-none text-dark fs-12 ms-2">品質保證</span>
             </li>
-            <li class="d-flex">
-              <img class="icon-good ms-lg-6" src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/icon_good03.svg" alt="原生創意">
+            <li class="d-flex ms-lg-6">
+              <img class="icon-good" data-bs-toggle="tooltip" data-bs-placement="top" title="原生創意"
+              src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/icon_good03.svg" alt="原生創意">
               <span class="d-block d-lg-none text-dark fs-12 ms-2">原生創意</span>
             </li>
-            <li class="d-flex">
-              <img class="icon-good ms-lg-6" src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/icon_good04.svg" alt="人氣王">
+            <li class="d-flex ms-lg-6">
+              <img class="icon-good" data-bs-toggle="tooltip" data-bs-placement="top" title="人氣王"
+              src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/icon_good04.svg" alt="人氣王">
               <span class="d-block d-lg-none text-dark fs-12 ms-2">人氣王</span>
             </li>
           </ul>
@@ -180,8 +184,8 @@ current: index
           <form class="form" action="">
             <!-- 贊助方案 -->
             <div class="mb-4">
-              <label for="select" class="form-label text-fourthly mb-2">贊助方案</label>
-              <select id="select" class="form-select border-0 bg-light px-4" name="方案" required>
+              <label for="select01" class="form-label text-fourthly mb-2">贊助方案</label>
+              <select id="select01" class="form-select border-0 bg-light px-4" name="方案" required>
                 <option value="" selected disable hidden>請選擇一個方案</option>
                 <option value="方案1">方案1</option>
                 <option value="方案2">方案2</option>
@@ -209,8 +213,8 @@ current: index
             </div>
             <!-- 付款方式 -->
             <div class="mb-6">
-              <label for="select" class="form-label text-fourthly mb-2">付款方式</label>
-              <select id="select" class="form-select border-0 bg-light px-4" name="交易方式" required>
+              <label for="select02" class="form-label text-fourthly mb-2">付款方式</label>
+              <select id="select02" class="form-select border-0 bg-light px-4" name="交易方式" required>
                 <option value="" selected disable hidden>請選擇交易方式</option>
                 <option value="信用卡付款">信用卡付款</option>
                 <option value="超商付款">超商付款</option>
@@ -325,8 +329,8 @@ current: index
             <form class="form" action="">
               <!-- 贊助方案 -->
               <div class="mb-4">
-                <label for="select" class="form-label text-fourthly mb-2">贊助方案</label>
-                <select id="select" class="form-select border-0 bg-light px-4" name="方案" required>
+                <label for="select01Mob" class="form-label text-fourthly mb-2">贊助方案</label>
+                <select id="select01Mob" class="form-select border-0 bg-light px-4" name="方案" required>
                   <option value="" selected disable hidden>請選擇一個方案</option>
                   <option value="方案1">方案1</option>
                   <option value="方案2">方案2</option>
@@ -336,26 +340,26 @@ current: index
               </div>
               <!-- 姓名 -->
               <div class="mb-4">
-                <label for="name" class="form-label text-fourthly mb-2">收件人姓名</label>
-                <input type="text" id="name" name="姓名" placeholder="請輸入姓名" minlength="2" required
+                <label for="nameMob" class="form-label text-fourthly mb-2">收件人姓名</label>
+                <input type="text" id="nameMob" name="姓名" placeholder="請輸入姓名" minlength="2" required
                 class="form-control border-0 bg-light px-4">
               </div>
               <!-- 電話 -->
               <div class="mb-4">
-                <label for="phone" class="form-label text-fourthly mb-2">聯絡電話</label>
-                <input type="tel" id="phone" name="電話" placeholder="請輸入電話" min="10" required
+                <label for="phoneMob" class="form-label text-fourthly mb-2">聯絡電話</label>
+                <input type="tel" id="phoneMob" name="電話" placeholder="請輸入電話" min="10" required
                 class="form-control border-0 bg-light px-4">
               </div>
               <!-- 信箱 -->
               <div class="mb-4">
-                <label for="Email" class="form-label text-fourthly mb-2">連絡信箱</label>
-                <input type="email" id="Email" name="信箱" placeholder="請輸入 Email" required
+                <label for="EmailMob" class="form-label text-fourthly mb-2">連絡信箱</label>
+                <input type="email" id="EmailMob" name="信箱" placeholder="請輸入 Email" required
                 class="form-control border-0 bg-light px-4">
               </div>
               <!-- 付款方式 -->
               <div class="mb-6">
-                <label for="select" class="form-label text-fourthly mb-2">付款方式</label>
-                <select id="select" class="form-select border-0 bg-light px-4" name="交易方式" required>
+                <label for="select02Mob" class="form-label text-fourthly mb-2">付款方式</label>
+                <select id="select02Mob" class="form-select border-0 bg-light px-4" name="交易方式" required>
                   <option value="" selected disable hidden>請選擇交易方式</option>
                   <option value="信用卡付款">信用卡付款</option>
                   <option value="超商付款">超商付款</option>
@@ -377,8 +381,7 @@ current: index
   Copyright © 拼拼 All rights reserved.
 </footer>
 
-
-<!-- Modal -->
+<!-- modal -->
 <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
   aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
@@ -417,3 +420,8 @@ current: index
     </div>
   </div>
 </div>
+
+
+
+
+
