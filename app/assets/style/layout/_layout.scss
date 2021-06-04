@@ -144,6 +144,7 @@
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
     color: #999999;
+    border: 0.1rem solid $gray-100;
   }
 }
 .company{
@@ -165,7 +166,7 @@
 .footer{
   background-color: #494846;
 }
-//其餘小元件
+//覆蓋樣式
 .btn-primary:hover{
   background-color: $thirdly;
   color: white !important;
@@ -181,7 +182,8 @@
     top: 7.2rem;
   }
 }
-
-
-
+.was-validated .form-select:invalid, .form-select.is-invalid ,
+.was-validated .form-control:invalid, .form-control.is-invalid {
+  border-color:  #FF785E;
+}
 

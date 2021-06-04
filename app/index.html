@@ -300,45 +300,50 @@ current: index
               <span class="d-inline-block fs-24 px-4 bg-white">贊助專案</span>
             </h3>
           </div>
-          <form class="form" action="">
+          <form class="form needs-validation" novalidate action="">
             <!-- 贊助方案 -->
             <div class="mb-4">
               <label for="select01" class="form-label text-fourthly mb-2">贊助方案</label>
-              <select id="select01" class="form-select border-0 bg-light px-4" name="方案" required>
+              <select id="select01" class="form-select bg-light px-4" name="方案" required>
                 <option value="" selected disable hidden>請選擇一個方案</option>
                 <option value="方案1">方案1</option>
                 <option value="方案2">方案2</option>
                 <option value="方案3">方案3</option>
                 <option value="方案4">方案4</option>
               </select>
+              <div class="invalid-feedback text-thirdly">請選擇一個方案</div>
             </div>
             <!-- 姓名 -->
             <div class="mb-4">
               <label for="name" class="form-label text-fourthly mb-2">收件人姓名</label>
-              <input type="text" id="name" name="姓名" placeholder="請輸入姓名" minlength="2" required
-              class="form-control border-0 bg-light px-4">
+              <input type="text" id="name" minlength="2" required
+              class="form-control bg-light px-4">
+              <div class="invalid-feedback text-thirdly">請輸入姓名</div>
             </div>
             <!-- 電話 -->
             <div class="mb-4">
               <label for="phone" class="form-label text-fourthly mb-2">聯絡電話</label>
-              <input type="tel" id="phone" name="電話" placeholder="請輸入電話" min="10" required
-              class="form-control border-0 bg-light px-4">
+              <input type="tel" id="phone" name="電話" min="10" required
+              class="form-control bg-light px-4">
+              <div class="invalid-feedback text-thirdly">請輸入電話</div>
             </div>
             <!-- 信箱 -->
             <div class="mb-4">
               <label for="Email" class="form-label text-fourthly mb-2">連絡信箱</label>
               <input type="email" id="Email" name="信箱" placeholder="請輸入 Email" required
-              class="form-control border-0 bg-light px-4">
+              class="form-control bg-light px-4">
+              <div class="invalid-feedback text-thirdly">請輸入正確的郵件格式</div>
             </div>
             <!-- 付款方式 -->
             <div class="mb-6">
               <label for="select02" class="form-label text-fourthly mb-2">付款方式</label>
-              <select id="select02" class="form-select border-0 bg-light px-4" name="交易方式" required>
+              <select id="select02" class="form-select bg-light px-4" name="交易方式" required>
                 <option value="" selected disable hidden>請選擇交易方式</option>
                 <option value="信用卡付款">信用卡付款</option>
                 <option value="超商付款">超商付款</option>
                 <option value="ATM">ATM</option>
               </select>
+              <div class="invalid-feedback text-thirdly">請選擇交易方式</div>
             </div>
             <div class="d-flex justify-content-center">
               <button type="submit" class="btn btn-primary btn-lg 
@@ -445,45 +450,50 @@ current: index
                 <span class="d-inline-block fs-24 px-4 bg-white">贊助專案</span>
               </h3>
             </div>
-            <form class="form" action="">
+            <form class="form needs-validation" novalidate action="">
               <!-- 贊助方案 -->
               <div class="mb-4">
                 <label for="select01Mob" class="form-label text-fourthly mb-2">贊助方案</label>
-                <select id="select01Mob" class="form-select border-0 bg-light px-4" name="方案" required>
+                <select id="select01Mob" class="form-select bg-light px-4" name="方案" required>
                   <option value="" selected disable hidden>請選擇一個方案</option>
                   <option value="方案1">方案1</option>
                   <option value="方案2">方案2</option>
                   <option value="方案3">方案3</option>
                   <option value="方案4">方案4</option>
                 </select>
+                <div class="invalid-feedback text-thirdly">請選擇一個方案</div>
               </div>
               <!-- 姓名 -->
               <div class="mb-4">
                 <label for="nameMob" class="form-label text-fourthly mb-2">收件人姓名</label>
-                <input type="text" id="nameMob" name="姓名" placeholder="請輸入姓名" minlength="2" required
-                class="form-control border-0 bg-light px-4">
+                <input type="text" id="nameMob" name="姓名"  minlength="2" required
+                class="form-control bg-light px-4">
+                <div class="invalid-feedback text-thirdly">請輸入姓名</div>
               </div>
               <!-- 電話 -->
               <div class="mb-4">
                 <label for="phoneMob" class="form-label text-fourthly mb-2">聯絡電話</label>
-                <input type="tel" id="phoneMob" name="電話" placeholder="請輸入電話" min="10" required
-                class="form-control border-0 bg-light px-4">
+                <input type="tel" id="phoneMob" name="電話"  min="10" required
+                class="form-control bg-light px-4">
+                <div class="invalid-feedback text-thirdly">請輸入電話</div>
               </div>
               <!-- 信箱 -->
               <div class="mb-4">
                 <label for="EmailMob" class="form-label text-fourthly mb-2">連絡信箱</label>
-                <input type="email" id="EmailMob" name="信箱" placeholder="請輸入 Email" required
-                class="form-control border-0 bg-light px-4">
+                <input type="email" id="EmailMob" name="信箱" required
+                class="form-control bg-light px-4">
+                <div class="invalid-feedback text-thirdly">請輸入正確的郵件格式</div>
               </div>
               <!-- 付款方式 -->
               <div class="mb-6">
                 <label for="select02Mob" class="form-label text-fourthly mb-2">付款方式</label>
-                <select id="select02Mob" class="form-select border-0 bg-light px-4" name="交易方式" required>
+                <select id="select02Mob" class="form-select bg-light px-4" name="交易方式" required>
                   <option value="" selected disable hidden>請選擇交易方式</option>
                   <option value="信用卡付款">信用卡付款</option>
                   <option value="超商付款">超商付款</option>
                   <option value="ATM">ATM</option>
                 </select>
+                <div class="invalid-feedback text-thirdly">請選擇交易方式</div>
               </div>
               <div class="d-flex justify-content-center">
                 <button type="submit" class="btn btn-primary btn-lg 
