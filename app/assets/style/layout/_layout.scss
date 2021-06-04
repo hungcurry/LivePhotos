@@ -109,6 +109,36 @@
     z-index: 1;
   }
 }
+.tab-detail{
+  .icon-number{
+    @include width(2.8rem , 2.8rem);
+    line-height: 2.8rem;
+  }
+}
+.tab-news{
+
+}
+.tab-qa{
+  .qa-img {
+    @include width(13.5rem , 13.3rem);
+    object-fit: cover;
+    @media screen and (min-width: $mq576) {
+      @include width(100% , 100%);
+    }
+    @media screen and (min-width: $mq1200) {
+      @include width(22rem , 16.8rem);
+    }
+  }
+}
+.tab-comment{
+
+}
+
+
+
+
+
+
 .form{
   select,input{
     padding-top: 0.7rem;
@@ -151,3 +181,7 @@
     top: 7.2rem;
   }
 }
+
+
+
+
