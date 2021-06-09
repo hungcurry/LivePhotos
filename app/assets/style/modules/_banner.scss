@@ -1,0 +1,31 @@
+.banner{
+  background-color: #F8F9FA ;
+  .badge{
+    width: 8rem;
+    line-height: 2.2rem;
+  }
+  .bannerImg{
+    border-radius: 3.2rem;
+  }
+  .targetNumber{
+    line-height: 2.5rem;
+  }
+  .progress{
+    height: 1.6rem;
+    background-color: #eee;
+  }
+  .icon-good{
+    @include width(2rem , 2rem);
+    @media screen and (min-width: $mq992) {
+      @include width(2.5rem , 2.5rem);
+    }
+  }
+  .track:hover{
+    background-color: $primary;
+    color: #636057!important;
+    border: 0.2rem solid transparent !important;
+  }
+  .track:hover .fa-heart{
+    color: $thirdly;
+  }
+}

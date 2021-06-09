@@ -3,10 +3,31 @@
   outline: 0;
 }
 * {
-  outline: 0.1rem solid red;
+  // outline: 0.1rem solid red;
   font-family: "Noto Sans TC" , -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif ;
 }
 
+// layout
+.tab-news{
+  .icon-number{
+    @include width(2.8rem , 2.8rem);
+    line-height: 2.8rem;
+  }
+}
+.tab-qa{
+  .qa-img {
+    @include width(13.5rem , 13.3rem);
+    object-fit: cover;
+    @media screen and (min-width: $mq576) {
+      @include width(100% , 100%);
+    }
+    @media screen and (min-width: $mq1200) {
+      @include width(22rem , 16.8rem);
+    }
+  }
+}
+
+//覆蓋樣式
 .btn-primary:hover{
   background-color: $thirdly;
   color: white !important;
@@ -14,72 +35,19 @@
 .btn-outline-secondary:hover{
   color: white !important;
 }
-
-.navbar{
-  .logo{
-    @include width(111px , 40px);
-  }
-  .navbar-nav{
-    @media screen and (min-width: $mq992) {
-      li + li {
-        margin-left: 48px;
-      }
-    }
-  }
-  .btn{
-    min-width: 9.6rem;
-    padding: 0.5rem 0.75rem;
+.scroll-lg-bar {
+  @media screen and (min-width: $mq992) {
+    overflow: auto ;
+    height: calc(80vh - 48px);
+    position: sticky;
+    top: 7.2rem;
   }
 }
-// navbar modal
-.modal{
-  .modal-header{
-    border-top: 4px solid $primary;
-  }
-  .modal-content{
-    border-radius: 0.8rem;
-    overflow: hidden;
-  }
-  .form-control{
-    line-height: 2.2;
-    background-color: #F7F7F7;
-  }
-  .progress{
-    height: 1px;
-  }
-  .progress-bar{
-    background-color: #E8E8DB ;
-  }
+.was-validated .form-select:invalid, .form-select.is-invalid ,
+.was-validated .form-control:invalid, .form-control.is-invalid {
+  border-color:  #FF785E;
 }
-.banner{
-  background-color: #F8F9FA ;
-  .badge{
-    width: 8rem;
-    line-height: 22px;
-  }
-  .bannerImg{
-    border-radius: 3.2rem;
-  }
-  .targetNumber{
-    line-height: 2.5rem;
-  }
-  .progress{
-    height: 1.6rem;
-    background-color: #eee;
-  }
-  .icon-good{
-    @include width(2rem , 2rem);
-    @media screen and (min-width: $mq992) {
-      @include width(2.5rem , 2.5rem);
-    }
-  }
-  .track:hover{
-    background-color: $primary;
-    color: #636057!important;
-    border: 2px solid transparent !important;
-  }
-  .track:hover .fa-heart{
-    color: $thirdly;
-  }
+.shadow-active {
+  transition: 0.3s;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.125);
 }
-
