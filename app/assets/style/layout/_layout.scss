@@ -8,115 +8,11 @@
 }
 
 // layout
-.navbar{
-  .logo{
-    @include width(11.1rem , 4rem);
-  }
-  li + li{
-    @media screen and (min-width: $mq992) {
-        margin-left: 4.8rem;
-    }
-  }
-  .btn{
-    min-width: 9.6rem;
-    padding: 0.5rem 0.75rem;
-  }
-}
-// navbar modal
-.modal{
-  .modal-header{
-    border-top: 0.4rem solid $primary;
-  }
-  .modal-content{
-    border-radius: 0.8rem;
-    overflow: hidden;
-  }
-  .form-control{
-    line-height: 2.2;
-    background-color: #F7F7F7;
-  }
-  .progress{
-    height: 0.1rem;
-  }
-  .progress-bar{
-    background-color: #E8E8DB ;
-  }
-}
-.banner{
-  background-color: #F8F9FA ;
-  .badge{
-    width: 8rem;
-    line-height: 2.2rem;
-  }
-  .bannerImg{
-    border-radius: 3.2rem;
-  }
-  .targetNumber{
-    line-height: 2.5rem;
-  }
-  .progress{
-    height: 1.6rem;
-    background-color: #eee;
-  }
-  .icon-good{
-    @include width(2rem , 2rem);
-    @media screen and (min-width: $mq992) {
-      @include width(2.5rem , 2.5rem);
-    }
-  }
-  .track:hover{
-    background-color: $primary;
-    color: #636057!important;
-    border: 0.2rem solid transparent !important;
-  }
-  .track:hover .fa-heart{
-    color: $thirdly;
-  }
-}
-.navTabs{
-  .nav-link{
-    padding-top: 1.5rem;
-    padding-bottom: 1.4rem; 
-    border-bottom: 0.2rem solid transparent;
-    @media screen and (min-width: $mq992) {
-      padding-top: 2.2rem;
-      padding-bottom: 2.2rem; 
-    }
-  }
-  .nav-link.active{
-    border-bottom: 0.2rem solid $primary;
-    font-weight: 700;
-  }
-  li + li{
-    @media screen and (min-width: $mq992) {
-        margin-left: 1.6rem;
-    }
-  }
-}
-.title{
-  img{
-    @include width(4.3rem , 3.6rem);
-  }
-  span{
-    z-index: 2;
-  }
-  h3::after{
-    content: "";
-    @include posCenter;
-    width: 100%;
-    height: 0.3rem;
-    background-color: $primary;
-    z-index: 1;
-  }
-}
-.tab-detail{
+.tab-news{
   .icon-number{
     @include width(2.8rem , 2.8rem);
     line-height: 2.8rem;
   }
-}
-.tab-news{
-
 }
 .tab-qa{
   .qa-img {
@@ -130,42 +26,7 @@
     }
   }
 }
-.tab-comment{
 
-}
-
-
-
-
-
-
-.form{
-  select,input{
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-    color: #999999;
-    border: 0.1rem solid $gray-100;
-  }
-}
-.company{
-  .icon-social{
-    @include width(3rem , 3rem);
-  }
-  .plan{
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    min-height: 4rem;
-  }
-}
-.card{
-  border-radius: 1.4rem;
-  .bg-beige{
-    background-color: #E8E8DB ;
-  }
-}
-.footer{
-  background-color: #494846;
-}
 //覆蓋樣式
 .btn-primary:hover{
   background-color: $thirdly;
@@ -186,4 +47,7 @@
 .was-validated .form-control:invalid, .form-control.is-invalid {
   border-color:  #FF785E;
 }
-
+.shadow-active {
+  transition: 0.3s;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.125);
+}

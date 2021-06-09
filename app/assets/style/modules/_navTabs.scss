@@ -1,0 +1,20 @@
+.navTabs{
+  .nav-link{
+    padding-top: 1.5rem;
+    padding-bottom: 1.4rem; 
+    border-bottom: 0.2rem solid transparent;
+    @media screen and (min-width: $mq992) {
+      padding-top: 2.2rem;
+      padding-bottom: 2.2rem; 
+    }
+  }
+  .nav-link.active{
+    border-bottom: 0.2rem solid $primary;
+    font-weight: 700;
+  }
+  li + li{
+    @media screen and (min-width: $mq992) {
+        margin-left: 1.6rem;
+    }
+  }
+}

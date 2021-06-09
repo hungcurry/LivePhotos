@@ -48,15 +48,15 @@ current: index
 <section class="banner pt-4 pb-8 py-md-12">
   <div class="container">
     <div class="row">
-      <div class="col-12 mb-4 mb-lg-6">
+      <div class="mb-4 mb-lg-6">
         <span class="badge bg-secondary p-0 mb-2 mb-lg-1 fs-12">魔法科技</span>
         <h1 class="fs-32 fw-bold">拍出會動的照片｜<span class="d-block d-lg-inline">LivePhotos 魔法拍立得</span></h1>
       </div>
-      <div class="col-12 col-lg-7 mb-4 mb-lg-0">
+      <div class="col-lg-7 mb-4 mb-lg-0">
         <img src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/produt_image.jpg" 
         alt="LivePhotos 魔法拍立得" class="bannerImg">
       </div>
-      <div class="col-12 col-lg-5 d-flex flex-column justify-content-between">
+      <div class="col-lg-5 d-flex flex-column justify-content-between">
           <span class="targetNumber d-block text-dark fs-14">目標 $600,000</span>
           <h2 class="fw-bold fs-32 Baloo">$280,047</h2>
           <!-- progress -->
@@ -129,10 +129,10 @@ current: index
   <div class="container px-0 px-lg-3">
     <ul class="nav navTabs flex-nowrap justify-content-between justify-content-lg-start px-md-2" id="nav-tab" role="tablist">
       <li class="nav-item">
-        <a class="nav-link text-dark px-2 px-md-4" id="detail-tab" data-bs-toggle="tab" href="#tab-detail">專案介紹</a>
+        <a class="nav-link text-dark px-2 px-md-4 active" id="detail-tab" data-bs-toggle="tab" href="#tab-detail">專案介紹</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-dark px-2 px-md-4 active" id="news-tab" data-bs-toggle="tab" href="#tab-news">常見問答</a>
+        <a class="nav-link text-dark px-2 px-md-4" id="news-tab" data-bs-toggle="tab" href="#tab-news">常見問答</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-dark px-2 px-md-4" id="qa-tab" data-bs-toggle="tab" href="#tab-qa">目前進度</a>
@@ -148,48 +148,96 @@ current: index
   <div class="container">
     <div class="row gx-lg-12">
       <!-- 左邊 頁籤區域 -->
-      <main class="col-12 col-lg-8">
+      <main class="col-lg-8">
         <!-- tabs -->
         <div class="tab-content mb-8 mb-lg-12" id="nav-tabContent">
           <!-- tab - 專案介紹 -->
-          <div class="tab-detail tab-pane fade" id="tab-detail" role="tabpanel">
+          <div class="tab-detail tab-pane fade show active" id="tab-detail" role="tabpanel">
             <!-- 文章內容 -->
             <article class="mb-4 mb-lg-6">
               <img src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/p1.jpg" alt="" class="mb-4 mb-lg-6 w-100">
-              <h4 class="border-start border-4 border-primary mb-2 ps-4 fs-24">施了魔法的照片</h4>
+              <h3 class="border-start border-4 border-primary mb-2 ps-4 fs-24">施了魔法的照片</h3>
               <p class="lh-lg">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。</p>
             </article>
             <article class="mb-4 mb-lg-6">
               <img src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/p2.jpg" alt="" class="mb-4 mb-lg-6 w-100">
-              <h4 class="border-start border-4 border-primary mb-2 ps-4 fs-24">留下當下的美好</h4>
+              <h3 class="border-start border-4 border-primary mb-2 ps-4 fs-24">留下當下的美好</h3>
               <p class="lh-lg">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。</p>
             </article>
           </div>
           <!-- tab - 常見問答 -->
-          <div class="tab-news tab-pane fade active show" id="tab-news" role="tabpanel">
-            <div class="accordion accordion-flush" id="accordionExample">
+          <div class="tab-news tab-pane fade" id="tab-news" role="tabpanel">
+            <div class="accordion" id="accordionExample">
               <!-- Q1 -->
-              <div class="accordion-item mb-4">
-                <h2 class="accordion-header" id="heading01">
+              <div class="accordion-item mb-4 shadow-active">
+                <h3 class="accordion-header" id="heading01">
                   <button class="accordion-button py-3 px-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapse01" aria-expanded="true" aria-controls="collapse01">
                     <span class="icon-number bg-primary fz-14 text-dark text-center fw-bold rounded-3 me-4">Q1</span>
                     影片拍完之後可以編輯嗎？
                   </button>
-                </h2>
+                </h3>
                 <div id="collapse01" class="accordion-collapse collapse show" aria-labelledby="heading01" data-bs-parent="#accordionExample">
-                  <div class="accordion-body text-secondary ps-16 py-5">可以進行簡易的編輯，內建 5 種濾鏡，影片秒數有3秒、5秒、10秒可以選擇，拍完的當下可以編輯要印出來的影片範圍哦！</div>
+                  <p class="accordion-body text-secondary ps-16 py-5">可以進行簡易的編輯，內建 5 種濾鏡，影片秒數有3秒、5秒、10秒可以選擇，拍完的當下可以編輯要印出來的影片範圍哦！</p>
                 </div>
               </div>
               <!-- Q2 -->
               <div class="accordion-item mb-4">
-                <h2 class="accordion-header" id="heading02">
-                  <button class="accordion-button py-3 px-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapse02" aria-expanded="false" aria-controls="collapse02">
+                <h3 class="accordion-header" id="heading02">
+                  <button class="accordion-button py-3 px-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse02" aria-expanded="false" aria-controls="collapse02">
                     <span class="icon-number bg-primary fz-14 text-dark text-center fw-bold rounded-3 me-4">Q2</span>
                     有提供保固或維修服務嗎？
                   </button>
-                </h2>
+                </h3>
                 <div id="collapse02" class="accordion-collapse collapse" aria-labelledby="heading02" data-bs-parent="#accordionExample">
-                  <div class="accordion-body text-secondary ps-16 py-5">提供產品售後服務，對產品本體(不含配件、線材)提供二年保固服務。</div>
+                  <p class="accordion-body text-secondary ps-16 py-5">提供產品售後服務，對產品本體(不含配件、線材)提供二年保固服務。</p>
+                </div>
+              </div>
+              <!-- Q3 -->
+              <div class="accordion-item mb-4">
+                <h3 class="accordion-header" id="heading03">
+                  <button class="accordion-button py-3 px-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse03" aria-expanded="false" aria-controls="collapse03">
+                    <span class="icon-number bg-primary fz-14 text-dark text-center fw-bold rounded-3 me-4">Q3</span>
+                    補充包底片要去哪裡購買呢？
+                  </button>
+                </h3>
+                <div id="collapse03" class="accordion-collapse collapse" aria-labelledby="heading02" data-bs-parent="#accordionExample">
+                  <p class="accordion-body text-secondary ps-16 py-5">各大商城超商，均有販售，如需團購可洽諮詢。</p>
+                </div>
+              </div>
+              <!-- Q4 -->
+              <div class="accordion-item mb-4">
+                <h3 class="accordion-header" id="heading04">
+                  <button class="accordion-button py-3 px-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse04" aria-expanded="false" aria-controls="collapse04">
+                    <span class="icon-number bg-primary fz-14 text-dark text-center fw-bold rounded-3 me-4">Q4</span>
+                    印出來的拍立得照片需要充電嗎？
+                  </button>
+                </h3>
+                <div id="collapse04" class="accordion-collapse collapse" aria-labelledby="heading02" data-bs-parent="#accordionExample">
+                  <p class="accordion-body text-secondary ps-16 py-5">不需要 如有疑問 可洽諮詢。</p>
+                </div>
+              </div>
+              <!-- Q5 -->
+              <div class="accordion-item mb-4">
+                <h3 class="accordion-header" id="heading05">
+                  <button class="accordion-button py-3 px-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse05" aria-expanded="false" aria-controls="collapse04">
+                    <span class="icon-number bg-primary fz-14 text-dark text-center fw-bold rounded-3 me-4">Q5</span>
+                    運送方式及付款方式有哪些呢？
+                  </button>
+                </h3>
+                <div id="collapse05" class="accordion-collapse collapse" aria-labelledby="heading02" data-bs-parent="#accordionExample">
+                  <p class="accordion-body text-secondary ps-16 py-5">宅配通貨到付款 /新竹貨運貨到付款/ 郵局貨到付款。 </p>
+                </div>
+              </div>
+              <!-- Q6 -->
+              <div class="accordion-item mb-4">
+                <h3 class="accordion-header" id="heading06">
+                  <button class="accordion-button py-3 px-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse06" aria-expanded="false" aria-controls="collapse04">
+                    <span class="icon-number bg-primary fz-14 text-dark text-center fw-bold rounded-3 me-4">Q6</span>
+                    退換貨方式及規則
+                  </button>
+                </h3>
+                <div id="collapse06" class="accordion-collapse collapse" aria-labelledby="heading02" data-bs-parent="#accordionExample">
+                  <p class="accordion-body text-secondary ps-16 py-5">依《消費者保護法》第19條第二項規定所訂定的『通訊交易解除權合理例外情事適用準則』.退回商品必須是全新狀態，完整包裝及附件都需齊全，如有缺少恕無法辦理退貨程序，請於7日內辦理退換貨。</p>
                 </div>
               </div>
             </div>
@@ -296,9 +344,9 @@ current: index
           <!-- title -->
           <div class="title mb-4 mb-lg-6">
             <img class="mx-auto mb-2 mb-lg-1" src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/hezuo.svg" alt="贊助專案">
-            <h3 class="position-relative d-flex justify-content-center align-items-center">
+            <h2 class="position-relative d-flex justify-content-center align-items-center">
               <span class="d-inline-block fs-24 px-4 bg-white">贊助專案</span>
-            </h3>
+            </h2>
           </div>
           <form class="form needs-validation" novalidate action="">
             <!-- 贊助方案 -->
@@ -353,7 +401,7 @@ current: index
         </div>
       </main>
       <!-- 右邊 卡片區域 -->
-      <aside class="col-12 col-lg-4">
+      <aside class="col-lg-4">
         <div class="scroll-lg-bar">
           <div class="company mb-4">
             <div class="border rounded-3 p-4 mb-8">
@@ -446,11 +494,11 @@ current: index
             <!-- title -->
             <div class="title mb-4 mb-lg-6">
               <img class="mx-auto mb-2 mb-lg-1" src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/hezuo.svg" alt="贊助專案">
-              <h3 class="position-relative d-flex justify-content-center align-items-center">
+              <h2 class="position-relative d-flex justify-content-center align-items-center">
                 <span class="d-inline-block fs-24 px-4 bg-white">贊助專案</span>
-              </h3>
+              </h2>
             </div>
-            <form class="form needs-validation" novalidate action="">
+            <form class="form needs-validation" id="sponsorForm" novalidate action="">
               <!-- 贊助方案 -->
               <div class="mb-4">
                 <label for="select01Mob" class="form-label text-fourthly mb-2">贊助方案</label>
@@ -497,7 +545,7 @@ current: index
               </div>
               <div class="d-flex justify-content-center">
                 <button type="submit" class="btn btn-primary btn-lg 
-                fw-bold text-dark rounded-pill px-12 py-2 lh-4">贊助專案</button>
+                fw-bold text-dark rounded-pill px-12 py-2 lh-4 w-100">贊助專案</button>
               </div>
             </form>
           </div>
@@ -506,9 +554,13 @@ current: index
     </div>
   </div>
 </section>
+
+<a href="#sponsorForm" id="sponsorBtn" class="fz-16 position-fixed bottom-0 start-0 btn btn-primary py-3 w-100 z-max d-lg-none">贊助專案</a>
+
 <footer class="footer container-fuild text-center p-4 p-lg-8 text-white">
   Copyright © 拼拼 All rights reserved.
 </footer>
+
 
 <!-- modal -->
 <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"

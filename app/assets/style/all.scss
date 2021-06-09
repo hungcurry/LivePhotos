@@ -47,9 +47,12 @@
 //-----------------
 // modules
 //-----------------
-// @import "./modules/social";
-
-
+@import "./modules/navbar";
+@import "./modules/banner";
+@import "./modules/NavTabs";
+@import "./modules/Accordion";
+@import "./modules/form";
+@import "./modules/footer";
 
 //-----------------
 // 工具類 放最後

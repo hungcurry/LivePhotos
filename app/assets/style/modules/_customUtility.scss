@@ -34,20 +34,6 @@
     }
   }
 }
-.remind2{
-  @include width(4rem , 4rem);
-  margin-right: 1rem;
-  @media screen and (min-width: $mq768) {
-    // @include width(5.3rem , 5.3rem);
-  }
-  &-Text{
-    width: 100%;
-    @include fontSize(1.6rem , 1.7);
-    @media screen and (min-width: $mq768) {
-      @include fontSize(1.8rem , 1.7);
-    }
-  }
-}
 // 圖樣
 .pattern{
   @include width(6.7rem , 5rem);
