@@ -19632,6 +19632,25 @@ select::-ms-expand {
   border: 0.1rem solid #f8f9fa;
 }
 
+.company .icon-social {
+  width: 3rem;
+  height: 3rem;
+}
+
+.company .plan {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  min-height: 4rem;
+}
+
+.card {
+  border-radius: 1.4rem;
+}
+
+.card .bg-beige {
+  background-color: #E8E8DB;
+}
+
 .footer {
   background-color: #494846;
 }

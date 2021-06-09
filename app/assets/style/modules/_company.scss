@@ -1,0 +1,16 @@
+.company{
+  .icon-social{
+    @include width(3rem , 3rem);
+  }
+  .plan{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    min-height: 4rem;
+  }
+}
+.card{
+  border-radius: 1.4rem;
+  .bg-beige{
+    background-color: #E8E8DB ;
+  }
+}
