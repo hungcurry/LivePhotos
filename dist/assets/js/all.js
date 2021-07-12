@@ -51,7 +51,8 @@ var formM = document.querySelector("#sponsorForm");
 var stickyBottomBtn = document.querySelector("#sponsorBtn");
 var footer = document.querySelector(".footer");
 var body = document.querySelector("body");
-window.addEventListener('scroll', scrollBtn); // stickyBottomBtn.classList.add('d-none');
+stickyBottomBtn.classList.add('d-none');
+window.addEventListener('scroll', scrollBtn);
 
 function scrollBtn() {
   var bodyHeight = document.body.scrollHeight; // 網頁整體高度
@@ -64,7 +65,7 @@ function scrollBtn() {
 
   var scrollY = window.scrollY; // 滾動的距離
 
-  if (scrollY <= scrollMediumPos) {
+  if (scrollY > screenHeight && scrollY <= scrollMediumPos) {
     stickyBottomBtn.classList.remove('d-none');
   } else {
     stickyBottomBtn.classList.add('d-none');
