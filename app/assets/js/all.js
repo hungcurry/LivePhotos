@@ -54,19 +54,18 @@ const formM = document.querySelector("#sponsorForm");
 const stickyBottomBtn = document.querySelector("#sponsorBtn");
 const footer = document.querySelector(".footer");
 const body = document.querySelector("body");
+stickyBottomBtn.classList.add('d-none');
 
 window.addEventListener('scroll', scrollBtn);
-// stickyBottomBtn.classList.add('d-none');
 function scrollBtn() {
   const bodyHeight = document.body.scrollHeight; // 網頁整體高度
   const screenHeight = window.innerHeight; // 裝置高度
   const elHeight = formM.clientHeight + footer.clientHeight + 72; // 表單和footer高度
   const scrollMediumPos = bodyHeight - screenHeight - elHeight; // scroll中間剩餘高度
   const scrollY = window.scrollY; // 滾動的距離
-  if(scrollY <= scrollMediumPos){
+  if(scrollY > screenHeight && scrollY <= scrollMediumPos ){
     stickyBottomBtn.classList.remove('d-none');
-  }
-  else{
+  } else{
     stickyBottomBtn.classList.add('d-none');
   }
 }
